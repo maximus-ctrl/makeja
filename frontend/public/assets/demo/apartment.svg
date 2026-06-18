@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#dbece2"/><stop offset="1" stop-color="#f7fbf8"/></linearGradient><linearGradient id="b" x1="0" x2="1"><stop stop-color="#667b70"/><stop offset="1" stop-color="#273c34"/></linearGradient></defs>
+  <rect width="900" height="560" fill="url(#g)"/><rect y="410" width="900" height="150" fill="#cfe0d5"/>
+  <rect x="135" y="130" width="490" height="300" rx="12" fill="url(#b)"/><rect x="215" y="90" width="330" height="340" rx="10" fill="#e9efec" stroke="#bccbc3"/>
+  <g fill="#1b6b44"><rect x="240" y="120" width="58" height="48" rx="6"/><rect x="330" y="120" width="58" height="48" rx="6"/><rect x="420" y="120" width="58" height="48" rx="6"/><rect x="240" y="205" width="58" height="48" rx="6"/><rect x="330" y="205" width="58" height="48" rx="6"/><rect x="420" y="205" width="58" height="48" rx="6"/><rect x="240" y="290" width="58" height="48" rx="6"/><rect x="420" y="290" width="58" height="48" rx="6"/></g>
+  <rect x="330" y="310" width="70" height="120" rx="6" fill="#163827"/><rect x="610" y="210" width="135" height="220" rx="10" fill="#345347"/><rect x="640" y="245" width="42" height="40" rx="6" fill="#bfe1ce"/><rect x="640" y="315" width="42" height="40" rx="6" fill="#bfe1ce"/>
+  <path d="M0 455c120-70 245-70 375 0s260 75 525 0v105H0z" fill="#b7d1c1"/><text x="55" y="72" font-family="Arial" font-size="34" font-weight="800" fill="#116b45">Makeja Apartment</text>
+</svg>

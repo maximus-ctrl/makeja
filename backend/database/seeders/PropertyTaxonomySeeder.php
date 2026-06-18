@@ -1,0 +1,4 @@
+<?php
+namespace Database\Seeders;
+use App\Models\PropertyCategory; use App\Models\PropertyType; use Illuminate\Database\Seeder; use Illuminate\Support\Str;
+class PropertyTaxonomySeeder extends Seeder { public function run(): void { $data = ['Homes'=>['Bedsitter','Single Room','1 Bedroom','2 Bedroom','Apartment','Maisonette','Mansion','Family Home'], 'Short Stay'=>['Hotel','Motel','Lodging','Guest House','Airbnb Style Stay'], 'Business Spaces'=>['Office','Shop','Stall','Go-down','Warehouse','Event Ground','Salon Space','Restaurant Space'], 'Land'=>['Plot','Acre','Farm Lease','Commercial Land','Residential Land','Rental Farming Land']]; foreach($data as $cat=>$types){ $category=PropertyCategory::firstOrCreate(['slug'=>Str::slug($cat)], ['name'=>$cat,'description'=>$cat.' listings']); foreach($types as $type){ PropertyType::firstOrCreate(['slug'=>Str::slug($type)], ['property_category_id'=>$category->id,'name'=>$type]); } } } }
