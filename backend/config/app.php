@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\ServiceProvider;
+
 return [
     'name' => env('APP_NAME', 'Makeja'),
     'env' => env('APP_ENV', 'production'),
@@ -11,9 +13,23 @@ return [
     'faker_locale' => 'en_US',
     'key' => env('APP_KEY'),
     'cipher' => 'AES-256-CBC',
-    'maintenance' => ['driver' => 'file'],
-    'providers' => [
-        App\Providers\AppServiceProvider::class,
+    'maintenance' => [
+        'driver' => 'file',
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Service Providers
+    |--------------------------------------------------------------------------
+    |
+    | Keep Laravel default providers, then add Makeja app providers.
+    | This fixes: Target class [files] does not exist.
+    |
+    */
+
+    'providers' => ServiceProvider::defaultProviders()->merge([
+        App\Providers\AppServiceProvider::class,
+    ])->toArray(),
+
     'aliases' => [],
 ];
